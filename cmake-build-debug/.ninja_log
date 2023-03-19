@@ -1,0 +1,27 @@
+# ninja log v5
+1	34	1679230263830481909	CMakeFiles/reporting_daemon.dir/reporting_event.c.o	5f4729cd368f2457
+45	77	1679252862975612513	reporting_daemon	efd2bb7689bbeccb
+1	39	1679244960031365669	CMakeFiles/reporting_daemon.dir/daemon_tasks/transfer_reports.c.o	9e44d13211325aed
+0	40	1679242943974867829	CMakeFiles/reporting_daemon.dir/daemon_task.c.o	87af18a25b2f7d2a
+1	45	1679252862939612405	CMakeFiles/reporting_daemon.dir/event_logging/watch_directory.c.o	22a21578f92c5c1b
+2	32	1679250190849695630	CMakeFiles/reporting_daemon.dir/daemon_tasks/transfer/unlock_directories.c.o	5cd9990e6b0eb9db
+0	28	1679257199394766351	build.ninja	eb3f95affb335879
+35	68	1679251974452919569	CMakeFiles/reporting_daemon.dir/daemon_tasks/transfer/transfer_uploads.c.o	5663466fd6b8ac49
+2	43	1679251974424919483	CMakeFiles/reporting_daemon.dir/daemon_tasks/transfer/transfer_reports.c.o	4f400a9ea019c568
+1	26	1679202337001637909	CMakeFiles/reporting_daemon.dir/departments.c.o	b76b39cf3e3f6318
+2	35	1679251974420919471	CMakeFiles/reporting_daemon.dir/event_logging/reporting_event.c.o	d8276df82aa3fc3e
+1	50	1679251974432919508	CMakeFiles/reporting_daemon.dir/main.c.o	f76bfb09a3ca47fb
+2	52	1679251974436919520	CMakeFiles/reporting_daemon.dir/daemon_tasks/check_directory.c.o	d73042f27eb086bb
+1	38	1679207680883100160	CMakeFiles/reporting_daemon.dir/reporting_time.c.o	56729b318ee7f744
+2	39	1679250190861695713	CMakeFiles/reporting_daemon.dir/time/reporting_time.c.o	27fe9002cc224779
+3	46	1679251974428919496	CMakeFiles/reporting_daemon.dir/daemon_tasks/transfer/backup_files.c.o	16d7f344951ccd2c
+40	67	1679250190889695905	CMakeFiles/reporting_daemon.dir/daemon_tasks/transfer/lock_directories.c.o	4505820653dcfc3f
+1	39	1679257330447203117	CMakeFiles/reporting_daemon.dir/event_logging/reporting_event.c.o	d8276df82aa3fc3e
+2	40	1679257330447203117	CMakeFiles/reporting_daemon.dir/daemon_tasks/transfer/transfer_reports.c.o	4f400a9ea019c568
+1	50	1679257330455203144	CMakeFiles/reporting_daemon.dir/main.c.o	f76bfb09a3ca47fb
+2	60	1679257330467203183	CMakeFiles/reporting_daemon.dir/event_logging/watch_directory.c.o	22a21578f92c5c1b
+1	66	1679257330475203210	CMakeFiles/reporting_daemon.dir/daemon_tasks/check_directory.c.o	d73042f27eb086bb
+1	28	1679257373111343028	CMakeFiles/reporting_daemon.dir/ipc/log_task_completion.c.o	24cadcdaf64ea658
+2	28	1679257373111343028	CMakeFiles/reporting_daemon.dir/signals/handle_interrupt.c.o	6f751d1a797e41cb
+2	41	1679257373127343080	CMakeFiles/reporting_daemon.dir/ipc/listen_task_completion.c.o	59d89bb979ffc748
+41	77	1679257373163343198	reporting_daemon	8d9ac6c13808d5ca

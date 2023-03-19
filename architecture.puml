@@ -1,0 +1,84 @@
+@startuml
+'https://plantuml.com/state-diagram
+
+scale 700 width
+[*] -[#red]-> Daemon
+
+state Daemon {
+
+    Daemonize:fork, setsid, chdir, close fd
+
+  [*] -[#red]-> Daemonize
+  Daemonize -[#red]-> Setup
+  Setup -[#red]-> Loop
+  Loop -> ReportingTime : Check Time
+  Loop -[#red]-> Tasks.TransferReports
+  Loop -[#red]-> Tasks.CheckDirectory
+
+
+
+
+
+
+   state Loop {
+
+   }
+
+      state ReportingTime {
+
+        CurrentTimeType: None, Check, Transfer
+
+      }
+
+      state CompletedTasksQueue {
+        Listen:
+        Send:
+
+        state Listen {
+
+            SysLog:
+
+        }
+
+
+      }
+
+      state Tasks {
+
+
+
+
+          state CheckDirectory {
+          LogReports:present, not present
+          }
+
+          state TransferReports {
+            LockDirectories -> BackupReports
+            BackupReports -> TransferUploads
+            TransferUploads -> UnlockDirectories
+          }
+
+          CheckDirectory -[#blue]-> Send
+
+        TransferReports -[#blue]-> Send
+
+      }
+
+      state Setup {
+
+              WatchUploads: create, delete, modify..
+              CreateQueue:
+
+              CreateQueue -[#blue]-> CompletedTasksQueue
+
+              HandleInterrupt -[#red]-> TransferReports
+              WatchUploads --> LogReportingEvent
+          }
+
+}
+
+
+
+
+
+@enduml

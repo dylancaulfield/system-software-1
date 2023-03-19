@@ -1,0 +1,3 @@
+/home/dylan/projects/reporting-daemon/cmake-build-debug/CMakeFiles/reporting_daemon.dir
+/home/dylan/projects/reporting-daemon/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/dylan/projects/reporting-daemon/cmake-build-debug/CMakeFiles/rebuild_cache.dir
